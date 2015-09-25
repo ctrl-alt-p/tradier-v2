@@ -10,9 +10,11 @@
     "scripts": {
         "build": "ember build",
         "start": "ember server",
-        "test": "ember test"
+        "test": "ember test",
+        "beautify": "find app/ config/ public/ tests/ *.js -name '*.js' -exec js-beautify --replace {} \\; -exec git add {} \\;"
     },
     "pre-commit": [
+        "beautify",
         "test"
     ],
     "repository": "git@github.com:ctrl-alt-p/tradier-v2.git",
