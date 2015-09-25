@@ -11,7 +11,7 @@
         "build": "ember build",
         "start": "ember server",
         "test": "ember test",
-        "beautify": "find app/ config/ public/ tests/ *.js -name '*.js' -exec js-beautify --replace {} \\; -exec git add {} \\;"
+        "beautify": "find app config public tests *.js *.json -name '*\\.js*' -exec js-beautify --replace {} \\; -exec git add {} \\;"
     },
     "pre-commit": [
         "beautify",
