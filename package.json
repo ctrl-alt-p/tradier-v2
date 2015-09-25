@@ -15,6 +15,7 @@
     },
     "pre-commit": [
         "beautify",
+        "build",
         "test"
     ],
     "repository": "git@github.com:ctrl-alt-p/tradier-v2.git",
@@ -37,7 +38,7 @@
         "ember-cli-materialize": "0.18.5",
         "ember-cli-qunit": "^1.0.0",
         "ember-cli-release": "0.2.3",
-        "ember-cli-sass": "3.3.1",
+        "ember-cli-sass": ">=4.0.0",
         "ember-cli-simple-auth": "0.8.0",
         "ember-cli-simple-auth-oauth2": "0.8.0",
         "ember-cli-sri": "^1.0.3",
