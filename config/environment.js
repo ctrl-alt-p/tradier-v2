@@ -19,6 +19,9 @@ module.exports = function(environment) {
         },
         sassOptions: {
             includePaths: ['bower_components/materialize/sass']
+        },
+        'simple-auth-oauth2': {
+            serverTokenEndpoint: 'https://api.tradier.com/v1/oauth/authorize?state=ohai&scope=read,market,stream&client_id=cEyXBmFf18Oyea2eKmgAtJ0SA5pT'
         }
     };
 
