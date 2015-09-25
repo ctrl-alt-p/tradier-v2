@@ -1,4 +1,5 @@
-# Tradier-v2
+# Tradier-v2 [![Build Status](https://travis-ci.org/ctrl-alt-p/tradier-v2.svg?branch=master)](https://travis-ci.org/ctrl-alt-p/tradier-v2)
+
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
