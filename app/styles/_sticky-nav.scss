@@ -1,0 +1,65 @@
+// app/styles/_sticky-nav.scss
+
+// Header, Main, and Footer all have spacing for the left-nav:
+header, main, footer.page-footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width: 992px) {
+    header, main, footer.page-footer {
+        padding-left: 0;
+    }
+}
+
+// Side-nav is below the open menu bar
+@media only screen and (max-width: 992px) {
+    .side-nav.fixed {
+        top: 64px;
+    }
+}
+
+// Main nav of the page
+nav.primary-page-nav {
+    // Logo in the header nav
+    .brand-logo {
+        white-space: nowrap;
+        padding-left: 20px;
+        height: 62px;
+
+        .logo {
+            height: 48px;
+            padding-top: 15px;
+        }
+    }
+}
+
+// Navbar is above the content
+.navbar-fixed {
+    z-index: 10000;
+}
+
+// Left nav of the page
+.primary-page-submenu {
+    li:hover,
+    li.active {
+        background-color: $primary-color;
+        color: $primary-color-text;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+// Footer floats at the bottom of the page
+body > div.ember-view {
+    // Body div fills the page
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    // Contents of the page are above the footer
+    .site-content {
+        flex: 1;
+    }
+}

@@ -1,2 +1,17 @@
-@import 'materialize';
-@import 'ember-cli-materialize';
+//
+// app/styles/app.scss
+//
+
+// Import the default colors
+@import "components/color";
+
+// Custom color settings go here
+@import "./_palette";
+
+// Setup Materialize SCSS:
+@import "components/variables";
+@import "materialize";
+@import "ember-cli-materialize";
+
+// Left-Navbar, Sticky-Navbar, Header, and Footer css:
+@import "./_sticky-nav";
