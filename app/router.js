@@ -1,10 +1,15 @@
 import Ember from 'ember';
 import config from './config/environment';
 
-var Router = Ember.Router.extend({
+let Router = Ember.Router.extend({
     location: config.locationType
 });
 
-Router.map(function() {});
+Router.map(function() {
+    this.route('login');
+    this.route('protected');
+    this.route('auth-error');
+});
 
-export default Router;
+export
+default Router;
